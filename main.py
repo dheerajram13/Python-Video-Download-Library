@@ -16,7 +16,7 @@ import pytube
 from selenium.webdriver.remote.webelement import WebElement
 from math import ceil
 print('\n\n\n\n\n###########Python Video Download Library###########\n\n\n')                    
-print('Created By: \n Priyank Patel \n Akkshansh Paul \n S.Dheeraj \n Rishab Pampattiwar \n###################################################\n') #title sequence
+print('Created By: \n Priyank Patel \n  S.Dheeraj \n Akkshansh Paul \n Rishab Pampattiwar \n###################################################\n') #title sequence
 
 '''User Module'''
 
