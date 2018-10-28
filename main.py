@@ -1,5 +1,6 @@
+
 import urllib
-from urllib import urlopen
+from urllib.request import urlopen
 import os
 import re
 from selenium import webdriver
@@ -16,7 +17,7 @@ import pytube
 from selenium.webdriver.remote.webelement import WebElement
 from math import ceil
 print('\n\n\n\n\n###########Python Video Download Library###########\n\n\n')                    
-print('Created By: \n Priyank Patel \n  S.Dheeraj \n Akkshansh Paul \n Rishab Pampattiwar \n###################################################\n') #title sequence
+
 
 '''User Module'''
 
@@ -57,7 +58,7 @@ for link in link_list:
     time.sleep(0.2)
     srcs = driver.find_element_by_id("embed_1_youtube").get_attribute("src")  #finding the video element by its id
         #driver.get(srcs)
-    path = '/Users/priyankpatel/Desktop/lecturevideos'              #setting the path for the download directory
+    path = os.getcwd()            #setting the path for the download directory
     time.sleep(1)
     video_url=list()
     video_url.append(srcs)
@@ -69,9 +70,11 @@ for link in link_list:
     
     
         
-    yt = pytube.YouTube(url)                        #implementig the pytube library
-    video=yt.get_videos()
-    video = yt.get('mp4','360p')                    #getting the video at desired settings
+    yt = pytube.YouTube(url)     
+
+    #implementig the pytube library
+    video=yt.streams.filter(file_extension='mp4', res='360p').all()
+#    video = yt.get(extension='mp4', resolution='360p')                  #getting the video at desired settings
     l=length-1
     print('Downloading %s out of %s videos'%(i,l))
     i=i+1
