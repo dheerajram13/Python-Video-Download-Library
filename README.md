@@ -35,7 +35,8 @@ python main.py
 
 ## Screenshots
 
-  ![Home page](images/Home.png) 
+  ![](images/img1.png) 
+  ![](images/img2.png) 
 
 ## Authors
 
