@@ -30,8 +30,7 @@ python main.py
 
 ## Built With
 
-* [Python](https://www.python.org/)  - The framework used to create server 
-
+* [Python](https://www.python.org/)  
 
 ## Screenshots
 
