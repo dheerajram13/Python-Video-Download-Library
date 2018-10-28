@@ -1,2 +1,42 @@
 # Python-Video-Download-Library
-This is a library used to download course material from various online course sites. The current process is very tedious, the student has to download the files individually and this is really time consuming. The library will use scrappy to get the information from the website. The user will be asked to enter the URL of the course website, then the library will do rest of the work. First using the provided URL, it will make a http request, next the library will use scrappy to get extract the individual video tags. Then once the video tags are extracted the video can be downloaded using scrapy’s media pipeline. The video will be saved to the user’s computer. The library will initially have support for Open Courseware, then the future support for other websites can be provided.Intially this project has been implemented for MIT OpenCourseware.
+This is a library used to download course material from various online course sites.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development.
+
+### Prerequisites
+
+* Install the [Python](https://www.python.org/) in your PC.
+* Install the [pip](https://pypi.org/project/pip/)
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running.
+* Open the terminal or powershell and go to the project path and type the below command
+
+
+```
+  pip install -r requirements.txt 
+```
+
+
+* open terminal or powershell and enter the below command
+
+```
+python main.py
+```
+
+
+## Built With
+
+* [Python](https://www.python.org/)  - The framework used to create server 
+
+
+## Screenshots
+
+  ![Home page](images/Home.png) 
+
+## Authors
+
+* **Srirama Dheeraj** - [DheerajRam13](https://github.com/dheerajram13/)
