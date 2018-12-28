@@ -1,0 +1,11 @@
+beautifulsoup4==4.5.3 
+selenium==3.5.0
+seleniumwrapper==0.5.
+tqdm==4.15.0
+wget==3.2
+pytube==9.3.6
+
+      
+      
+        
+        
